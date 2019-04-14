@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			window.resize=function(){
+				console.log("!!!!!");
+			}
+			let map = new Map();
+			map.set('zhangsan', 20)
+			map.set('lisi', 19)
+			map.set('wanwu', 19)
+			var arr = [{
+				name: 'zhangsan',
+				age: 19
+			}, {
+				name: 'lisi',
+				age: 18
+			}, {
+				name: 'wanwu',
+				age: 23
+			}, {
+				name: 'zhaoliu',
+				age: 17
+			}]
+
+			for(let [name, age] of map) {
+				console.log(name);
+				console.log(age)
+			}
+
+		</script>
+	</body>
+
+</html>
